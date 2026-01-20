@@ -28,7 +28,19 @@ If you clone this repository without Git LFS, you will only get a tiny pointer f
 
 ---
 
-##  Quick Start
+Research & Training
+While app.py is for deployment, the complete research and training pipeline is documented in the Jupyter Notebook file included in this repository (predict_phishing_model.ipynb).
+
+This notebook contains:
+
+Data Preprocessing: The exact cleaning steps applied to the raw dataset.
+
+Model Training: Source code for training BERT, LSTM, and TF-IDF models from scratch.
+
+Comparative Analysis: Graphs and metrics showing the performance comparison between the three models (Proof of Concept).
+
+
+##  Quick Start For Test Web App
 
 ### 1. Install Dependencies
 Ensure you have Python 3.8+ installed.
@@ -36,9 +48,10 @@ Ensure you have Python 3.8+ installed.
 pip install -r requirements.txt
 ```
 
-### 2. Run The Detector
+### 2. Run The Web App
 ```
-python predict.py
+python app.py
 ```
 
+or you can visit https://huggingface.co/spaces/WillyCuk/phishing-email-bert-detection
 
